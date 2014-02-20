@@ -3,6 +3,5 @@
 @import "timeline-mixin";
 
 .timeline {
-  @include timeline(30px, 15px, coral, 10%, black, 5px, 5);
-  font-family: Helvetica Neue;
+  @include timeline(50px, 10px, #c5e1e7, 20%, white, 10px, 4);
 }

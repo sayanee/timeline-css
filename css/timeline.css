@@ -4,86 +4,79 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 30px;
+  line-height: 30px;
   display: block;
   overflow: hidden;
-  font-family: Helvetica Neue;
 }
 .timeline li {
   display: block;
   float: left;
-  padding: 6px 12px 6px 24px;
+  padding: 10px 20px 10px 40px;
   position: relative;
-  margin: 0 5px 0 0;
-  color: black;
+  margin: 0 10px 0 0;
+  color: white;
 }
 .timeline li:after {
   content: "";
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-left: 15px solid transparent;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid transparent;
   position: absolute;
-  right: -15px;
+  right: -25px;
   top: 0;
   z-index: 1;
-  border-left: 15px solid coral;
+  border-left: 25px solid #c5e1e7;
 }
 .timeline li:before {
   content: "";
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-left: 15px solid white;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid white;
   position: absolute;
   left: 0;
   top: 0;
 }
 .timeline li:nth-child(n):after {
-  border-left-width: 15px;
+  border-left-width: 25px;
   border-left-style: solid;
 }
 .timeline li:nth-child(1) {
-  padding-left: 10px;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  padding-left: 20px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 .timeline li:nth-child(1):before {
   display: none;
 }
 .timeline li:nth-child(1) {
-  background: coral;
+  background: #c5e1e7;
 }
 .timeline li:nth-child(1):after {
-  border-left-color: coral;
+  border-left-color: #c5e1e7;
 }
 .timeline li:nth-child(2) {
-  background: #ff5a1d;
+  background: #7dbcc9;
 }
 .timeline li:nth-child(2):after {
-  border-left-color: #ff5a1d;
+  border-left-color: #7dbcc9;
 }
 .timeline li:nth-child(3) {
-  background: #e93f00;
+  background: #428e9e;
 }
 .timeline li:nth-child(3):after {
-  border-left-color: #e93f00;
+  border-left-color: #428e9e;
 }
 .timeline li:nth-child(4) {
-  background: #b63100;
+  background: #244d56;
 }
 .timeline li:nth-child(4):after {
-  border-left-color: #b63100;
-}
-.timeline li:nth-child(5) {
-  background: #832300;
-}
-.timeline li:nth-child(5):after {
-  border-left-color: #832300;
+  border-left-color: #244d56;
 }
 .timeline li:last-child {
-  padding-right: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  padding-right: 25px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .timeline li:last-child:after {
   display: none;
