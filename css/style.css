@@ -1,0 +1,93 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: Helvetica Neue, Arial, sans-serif;
+}
+
+body {
+  font-size: 1em;
+}
+
+::selection {
+  background: #ebeff2;
+}
+
+::-moz-selection {
+  background: #ebeff2;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+ul {
+  padding: 0;
+}
+
+.title {
+  font-size: 2em;
+  margin: 0 0 1em 0;
+  text-align: center;
+  color: black;
+  background: #e5eaee;
+}
+
+.options, .code {
+  padding: 1em;
+}
+
+.options {
+  width: 50%;
+  float: left;
+}
+
+.code {
+  width: 50%;
+  float: right;
+  border-left: 1px solid #e5eaee;
+  color: #585ed8;
+}
+
+.demo {
+  min-height: 100px;
+  padding: 1em;
+}
+
+.form-group {
+  padding: 0.5em;
+}
+.form-group label {
+  width: 30%;
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 5%;
+  text-align: right
+}
+.form-group input {
+  font-size: 1em;
+  border: none;
+  width: 45%;
+  outline: none;
+  display: inline-block;
+  border-bottom: 1px solid #e5eaee;
+}
+.form-group span {
+  margin: 0 1em;
+  display: inline-block;
+  width: 5%;
+}
+.form-group:hover {
+  background-color: #fbfbdb;
+}
+
+@media (max-width: 800px) {
+  .options, .code {
+    width: 100%;
+  }
+}
