@@ -1,6 +1,6 @@
-#timeline-css [![Build Status](https://travis-ci.org/sayanee/timeline-css.png)](https://travis-ci.org/sayanee/timeline-css) [![Dependency Status](https://gemnasium.com/sayanee/timeline-css.png)](https://gemnasium.com/sayanee/timeline-css)
+#timeline-css [DEMO](http://sayan.ee/timeline-css/) [![Build Status](https://travis-ci.org/sayanee/timeline-css.png)](https://travis-ci.org/sayanee/timeline-css) [![Dependency Status](https://gemnasium.com/sayanee/timeline-css.png)](https://gemnasium.com/sayanee/timeline-css)
 
-[DEMO](http://sayan.ee/timeline-css/)
+
 
 > A [SASS](http://sass-lang.com/) mixin to generate timeline / breadcrumbs CSS.
 
