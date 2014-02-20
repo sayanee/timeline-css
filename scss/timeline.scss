@@ -1,0 +1,8 @@
+@import "compass/css3";
+
+@import "timeline-mixin";
+
+.timeline {
+  @include timeline(30px, 15px, coral, 10%, black, 5px, 5);
+  font-family: Helvetica Neue;
+}
