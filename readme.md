@@ -1,6 +1,8 @@
-#timeline-css
+#timeline-css [![Build Status](https://travis-ci.org/sayanee/timeline-css.png)](https://travis-ci.org/sayanee/timeline-css) [![Dependency Status](https://gemnasium.com/sayanee/timeline-css.png)](https://gemnasium.com/sayanee/timeline-css)
 
-> A [SASS](http://sass-lang.com/) mixin to generate timeline / breadcrumbs CSS. 
+[DEMO](http://sayan.ee/timeline-css/)
+
+> A [SASS](http://sass-lang.com/) mixin to generate timeline / breadcrumbs CSS.
 
 
 
@@ -48,39 +50,39 @@ You can use either of the **3 syntaxes**: CSS, SCSS or SASS
 ###1. with css
 
 1. include the file `css/timeline.css` in your HTML file
-	
+
 
 ###2. with SCSS
 
 1. include the files `scss/timeline-mixin.scss` as a mixin
 1. with reference to file `scss/timeline.scss` import compass and the timeline mixin
-	
+
 	```
 	@import "compass/css3";
 	@import "timeline-mixin";
 	```
 1. call the mixin with a class name e.g. `.breadcrumb`
-	
+
 	```
 	.breadcrumb {
 	  @include timeline(50px, 10px, #c5e1e7, 20%, white, 10px, 4);
 	}
 	```
-1. compile SCSS to CSS 
+1. compile SCSS to CSS
 
 ###3. with sass
 
 1. include the files `scss/timeline-mixin.sass` as a mixin
 1. with reference to file `scss/timeline.sass` import compass and the timeline mixin
-	
+
 	```
 	@import "compass/css3"
 	@import "timeline-mixin"
 	```
 1. call the mixin with a class name e.g. `.breadcrumb`
-	
+
 	```
-	.breadcrumb 
+	.breadcrumb
 	  @include timeline(50px, 10px, #c5e1e7, 20%, white, 10px, 4)
 	```
 1. compile SASS to CSS
@@ -101,7 +103,7 @@ The SASS mixin is defined with the following arguments:
 	// sass syntax
 	.timeline
 	  @include timeline(50px, 10px, #c5e1e7, 20%, #fff, 10px, 4)
-	  
+
 	// html syntax
 	<ul class="timeline">
 	  <li>Baroque</li>
@@ -110,7 +112,7 @@ The SASS mixin is defined with the following arguments:
 	  <li>Contemporary</li>
 	</ul>
 	```
-	
+
 	![](img/eg1.png)
 
 1. change height from `50px` to `30px`
@@ -171,7 +173,7 @@ The SASS mixin is defined with the following arguments:
 	```
 	.timeline
   		@include timeline(30px, 15px, coral, 10%, #000, 5px, 5)
-  		
+
   	// html
 	<ul class="timeline">
 	  <li>Baroque</li>
