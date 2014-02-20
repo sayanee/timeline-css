@@ -1,0 +1,19 @@
+{
+  "name": "timeline-css",
+  "version": "0.1.0",
+  "author": "Sayanee <sayanee@gmail.com>",
+  "description": "A SASS mixin to generate timeline / breadcrumbs CSS.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sayanee/timeline-css.git"
+  },
+  "devDependencies": {
+    "grunt": "0.4.2",
+    "grunt-cli": "0.1.9",
+    "grunt-contrib-compass": "0.5.0",
+    "grunt-jsonlint": "1.0.4"
+  },
+  "scripts": {
+    "test": "grunt --verbose"
+  }
+}

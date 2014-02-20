@@ -1,0 +1,61 @@
+@mixin timeline($height, $curved-corner, $background-color, $darkenby-percent, $textcolor, $seperation, $depth)
+  $border-size: $height*0.5
+  $font-size: $height*0.6
+  $padding-top-bottom: $height*0.2
+  $padding-right: 0.4*$height
+  $padding-left: 0.8*$height
+
+  text-align: center
+  list-style: none
+  @include box-sizing(border-box)
+  font-size: $font-size
+  line-height: $font-size
+  display: block
+  overflow: hidden
+  li
+    display: block
+    float: left
+    padding: $padding-top-bottom $padding-right $padding-top-bottom $padding-left
+    position: relative
+    margin: 0 $seperation 0 0
+    color: $textcolor
+    &:after
+      content: ""
+      border-top: $border-size solid transparent
+      border-bottom: $border-size solid transparent
+      border-left: $border-size solid transparent
+      position: absolute
+      right: -($border-size)
+      top: 0
+      z-index: 1
+      border-left: $border-size solid $background-color
+    &:before
+      content: ""
+      border-top: $border-size solid transparent
+      border-bottom: $border-size solid transparent
+      border-left: $border-size solid white
+      position: absolute
+      left: 0
+      top: 0
+    &:nth-child(n)
+      &:after
+        border-left-width: $border-size
+        border-left-style: solid
+    &:nth-child(1)
+      padding-left: $seperation*2
+      border-top-left-radius: $curved-corner
+      border-bottom-left-radius: $curved-corner
+      &:before
+        display: none
+    @for $i from 1 through $depth
+      &:nth-child(#{$i})
+        $multiplicand: ($i - 1)
+        background: darken($background-color, $darkenby-percent*$multiplicand)
+        &:after
+          border-left-color: darken($background-color, $darkenby-percent*$multiplicand)
+    &:last-child
+      padding-right: $border-size
+      border-top-right-radius: $curved-corner
+      border-bottom-right-radius: $curved-corner
+      &:after
+        display: none
