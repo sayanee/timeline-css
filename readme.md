@@ -6,19 +6,21 @@
 
 #pre-requisites
 
-Install RubyGems SASS and Compass
+Install RubyGems [SASS](http://sass-lang.com/) and [Compass](http://compass-style.org/)
 
 ```
 gem install sass
 gem install compass
 ```
 
+Install [NodeJS and NPM](http://nodejs.org/)
 
 #getting started
 
 ###install
 
-with bower: `bower install timeline-css`
+- with bower: `bower install timeline-css`
+- git clone: `git clone git@github.com:sayanee/timeline-css.git`
 
 ###html
 
@@ -40,15 +42,12 @@ You can use either of the **3 syntaxes**: CSS, SCSS or SASS
 	```
 	npm install
 	```
-1. change the mixin arguments in file `sass/timeline`
+1. change the mixin arguments and the class name in file `sass/timeline`
 1. run `grunt` to compile SASS to SCSS and CSS
-2
 
 ###1. with css
 
-1. **CSS**
-
-	- include the file `css/timeline.css` in your HTML file
+1. include the file `css/timeline.css` in your HTML file
 	
 
 ###2. with SCSS
@@ -114,7 +113,7 @@ The SASS mixin is defined with the following arguments:
 	
 	![](img/eg1.png)
 
-1. change height to `30px`
+1. change height from `50px` to `30px`
 
 	```
 	.timeline
@@ -122,7 +121,7 @@ The SASS mixin is defined with the following arguments:
   ```
 	![](img/eg2.png)
 
-1. change curvature to `15px`
+1. change curvature from `10px` to `15px`
 
 	```
 	.timeline
@@ -131,7 +130,7 @@ The SASS mixin is defined with the following arguments:
 	![](img/eg3.png)
 
 
-1. change lightest background color to `coral`
+1. change lightest background color from `#c5e1e7` to `coral`
 
 	```
 	.timeline
@@ -140,7 +139,7 @@ The SASS mixin is defined with the following arguments:
 	![](img/eg4.png)
 
 
-1. change percentage darkened by to `10%`
+1. change percentage darkened by from `20%` to `10%`
 
 	```
 	.timeline
@@ -149,7 +148,7 @@ The SASS mixin is defined with the following arguments:
 	![](img/eg5.png)
 
 
-1. change text color to `#000`
+1. change text color from `#fff` to `#000`
 
 	```
 	.timeline
@@ -158,7 +157,7 @@ The SASS mixin is defined with the following arguments:
 	![](img/eg6.png)
 
 
-1. change seperation distance to `5px`
+1. change seperation distance from `10px` to `5px`
 
 	```
 	.timeline
@@ -167,7 +166,7 @@ The SASS mixin is defined with the following arguments:
 	![](img/eg7.png)
 
 
-1. change the number of items to `5`
+1. change the number of items from `4` to `5`
 
 	```
 	.timeline
